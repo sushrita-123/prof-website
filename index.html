@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sushrita Rakshit</title>
+
+    <link rel="stylesheet" href="css/foundations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 300px; /* Two columns */
+            grid-template-rows: auto auto; /* Two rows */
+            gap: 20px;
+            align-items: start;
+        }
+
+        .main-content {
+            grid-column: 1 / 2; /* Span both columns */
+            grid-row: 1; /* First row */
+        }
+
+        .tabs {
+            grid-column: 1; /* First column */
+            grid-row: 2; /* Second row */
+            display: flex; /* Use flexbox */
+            justify-content: space-evenly; /* Evenly space the tabs */
+            gap: 20px; /* Spacing between tabs */
+            align-items: center; /* Center align vertically */
+        }
+
+        .right-content {
+            grid-column: 2; /* Second column */
+            grid-row: 1; /* Second row */
+        }
+
+        .panel {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .tab {
+        background-color: #9dd4ec; /* Light blue */
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        flex-grow: 1; /* Allow tabs to grow equally */
+        text-align: center; /* Center text */
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+        .tab-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script src="js/vendor/custom.modernizr.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116065959-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-116065959-1');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main Content Section -->
+        <div class="main-content panel">
+            <h1>Sushrita Rakshit</h1>
+            <div class="bio-container">
+                <img src="images/sushrita.png" width="400px" alt="It's me, Sushrita Rakshit!" class="bio-image">
+                <div class="bio-text">
+                    <p>Hello! My name is Sushrita (suh-shree-tah) and I'm a senior at the University of Michigan. I'm currently a part of the BLABLABLAB here at UMich and was previously a part of the Affective Computing Group at the University of Southern California.</p>
+                    <p>
+                        I'll be applying as a PhD student this time of year! If you're interested, please reach out! I've been fortunate enough to be mentored by great minds like David Jurgens, Jonathan Gratch, and Hua Shen. My primary interests lie in LLM interpretability, the intersection of NLP and HCI, and understanding how we can make more trustworthy AI systems that mimic human behavior. I'm a strong believer that humans must be understood in order to artificiate their behavior and I intend to make this a large focus of my research questions!
+                    </p>
+                </div>
+            </div> <br>
+
+            
+
+            <div class="tabs panel">
+                <button class="tab" data-target="content1">Publications</button>
+                <button class="tab" data-target="content2">Projects</button>
+                <button class="tab" data-target="content3">Contact Me</button>
+                <button class="tab" data-target="content4">Some Hobbies</button>
+            </div>
+            
+            <div id="content1" class="tab-content">
+                <ul>
+                    <ul>
+                        <li><strong>[W.1]</strong> <u>Sushrita Rakshit</u><sup>1</sup>, James Hale<sup>2</sup>, Kushal Chawla<sup>3</sup>, Jeanne Brett<sup>4</sup>, Jonathan Gratch<sup>5</sup> (2024). <strong>Towards Emotionally-Aware Agents for Dispute Resolution</strong>. Manuscript submitted to <i>EMNLP SiCon</i>.</li>
+                        <br>
+                        <li><strong>[J.1]</strong> Hua Shen<sup>1</sup>, Tiffany Knearem<sup>2</sup>, Reshmi Ghosh<sup>2</sup>, Kenan Alkiek<sup>3</sup>, Kundan Krishna<sup>3</sup>, Yachuan Liu<sup>3</sup>, Ziqiao Ma<sup>3</sup>, Savvas Petridis<sup>3</sup>, Yi-Hao Peng<sup>3</sup>, Li Qiwei<sup>3</sup>, <u>Sushrita Rakshit</u><sup>3</sup>, Chenglei Si<sup>3</sup>, Yutong Xie<sup>3</sup>, Jeffrey P. Bigham<sup>4</sup>, Frank Bentley<sup>4</sup>, Joyce Chai<sup>4</sup>, Zachary Lipton<sup>4</sup>, Qiaozhu Mei<sup>4</sup>, Rada Mihalcea<sup>4</sup>, Michael Terry<sup>4</sup>, Diyi Yang<sup>4</sup>, Meredith Ringel Morris<sup>5</sup>, Paul Resnick<sup>5</sup>, David Jurgens<sup>5</sup> (2024). <a href="https://arxiv.org/abs/2406.09264"><strong>Towards Bidirectional Human-AI Alignment: A Systematic Review for Clarifications, Framework, and Future Directions</strong></a>. <i>arXiv preprint</i>, arXiv:2406.09264. Manuscript submitted to <i>ACM CSUR</i>.</li>
+                        <br>
+                        <li><strong>[S.1]</strong> Jonathan Ivey<sup>1</sup>, Shivani Kumar<sup>1</sup>, Jiayu Liu<sup>1</sup>, Hua Shen<sup>1</sup>, <u>Sushrita Rakshit</u><sup>1</sup>, Rohan Raju<sup>1</sup>, Haotian Zhang<sup>1</sup>, Aparna Ananthasubramaniam<sup>1</sup>, Junghwan Kim<sup>1</sup>, Bowen Yi<sup>1</sup>, Dustin Wright<sup>1</sup>, Abraham Israeli<sup>1</sup>, Anders Moller<sup>1</sup>, Lechen Zhang<sup>1</sup> (2024). <strong>More Human than Humans: Using LLMs to Simulate Human Dialogue</strong>. Manuscript submitted to <strong><i>idk where</i></strong>. <i>Note: the authorship order is first author randomized.</i></li>
+                        <br>
+                        <li><strong>[S.1]</strong> Yinuo Xu<sup>1</sup>, <u>Sushrita Rakshit</u><sup>1</sup>, Aparna Ananthasubramaniam<sup>1</sup>, Omkar Yadav<sup>1</sup>, Mingqian Zheng<sup>1</sup>, Michael Jiang<sup>1</sup>, Lechen Zhang<sup>1</sup>, Bowen Yi<sup>1</sup>, Kenan Alkiek<sup>1</sup>, Abraham Israeli<sup>1</sup>, Bangzhao Shu<sup>1</sup>, Hua Shen<sup>1</sup>, Jiaxin Pei<sup>1</sup>, Haotian Zhang<sup>1</sup>, Miriam Schirmer<sup>1</sup>, David Jurgens<sup>1</sup> (2024). <strong>Please Reply: Causally Modeling the Linguistic and Social Factors that Predict Email Response</strong>. Manuscript submitted to <i>EMNLP</i>. <i>Note: the authorship order is first author randomized.</i></li>
+                      </ul>
+                      
+                </ul>
+            </div>
+            <div id="content2" class="tab-content">
+                <p>
+                    <strong>Current</strong><br>
+                    1. Spatial Understanding of LLMs<br>
+                    2. How do we close knowledge gaps? Conversation Dynamics Between Humans and LLMs<br><br>
+                    
+                    <strong>Previous</strong><br>
+                    1. Opponent Modeling within Dispute Resolution<br>
+                    2. Causal Modeling of Emotions to Predict and Represent Dispute Satisfactions<br>
+                    3. Causal Modeling of Email Intent (GMANE Dataset)<br>
+                    4. Simulating Humans Utilizing LLMs (WildChat)
+                </p>
+            </div>
+            <div id="content3" class="tab-content">
+                <p>Reach out to sushrita@umich.edu to chat some more!</p>
+            </div>
+
+            <div id="content4" class="tab-content">
+                <ul>
+                    <ul>
+                        <li><strong>Knitting</li>
+                        <br>
+                        <li><strong>Singing. Fun fact: I have a degree in indian classical music and teach some students from my hometown!</li>
+                        <br>
+                        <li><strong>Reading</li>
+                        <br>
+                        <li><strong>Cafe Hopping!</li>
+                      </ul>
+                      
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tabs Section -->
+        
+
+        <!-- Right Content Section -->
+        <div class="right-content panel">
+            <hr />
+                <p style="font-size: 14px">
+                    Undergraduate Student, <br /> Conducting research in the <a href="https://www.si.umich.edu/">School of Information</a> and obtaining my degree from <a href="http://cse.umich.edu/cse/">Department of Computer Science &amp; Engineering</a>, <br />
+                    <a href="http://umich.edu/">University of Michigan</a><br />
+                </p>
+
+                <p>
+                    <a href="mailto:sushrita@umich.edu">sushrita@umich.edu</a><br />
+                </p>
+
+                <hr />
+                <p>Undergraduate researcher for the <a href="http://blablablab.si.umich.edu/">Blablablab</a></p>
+                <img src="images/blablablab-logo.webp" width="240px" alt="The lab!" class="bio-image">
+
+
+
+                <br />
+                <p><a href="http://css.si.umich.edu">Computational Social Science, Natural Language Processing, Human-Computer Interaction at UMSI</a></p>
+
+                <hr />
+                <p>
+                    <a href="docs/Sushrita_CV.pdf">Curriculum Vitae</a><br />
+                    <a href="https://scholar.google.com/citations?user=NhB6bukAAAAJ&hl=en">Google Scholar</a><br />
+                    <a href="https://www.linkedin.com/in/sushrita-rakshit-036611227/">LinkedIn</a><br />
+                </p>
+
+                <hr />
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all tab buttons
+            const tabs = document.querySelectorAll('.tab');
+            // Select all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+    
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.style.display = 'none');
+    
+                    // Remove 'active' class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+    
+                    // Show the selected tab content
+                    const target = document.getElementById(tab.getAttribute('data-target'));
+                    if (target) {
+                        target.style.display = 'block';
+                    }
+    
+                    // Add 'active' class to the clicked tab
+                    tab.classList.add('active');
+                });
+            });
+    
+            // Optionally, trigger the first tab click to show the initial content
+            if (tabs.length > 0) {
+                tabs[0].click();
+            }
+        });
+    </script>
+    
+</body>
+
+
+
+</html>
