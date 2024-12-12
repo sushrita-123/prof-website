@@ -4994,3 +4994,55 @@ p {
     font-size: 14px;
     margin-top: 10px;
 }
+
+/* Section Styling */
+.section {
+  background-color: #f4f8ff; /* Light background */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b2d42;
+  margin-bottom: 10px;
+}
+
+/* List Styling */
+.item-list {
+  list-style-type: none;  /* Remove default bullets */
+  padding-left: 0;
+}
+
+.item-list li {
+  font-size: 16px;
+  color: #4f5d75;
+  padding: 5px;
+  margin-bottom: 8px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+/* Icons */
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Hover effect on list items */
+.item-list li:hover {
+  background-color: #e6f0ff;
+  border-left: 4px solid #2b2d42; /* Highlight border */
+  cursor: pointer;
+}
+
+/* Subtle transitions */
+.item-list li:hover .icon {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
