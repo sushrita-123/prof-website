@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Sushrita Rakshit</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/foundations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,57 +14,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
 
     <style>
+        /* General Styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    
+        h1 {
+            font-weight: 300;
+            color: #4a90e2;
+        }
+    
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    
+        a:hover {
+            color: #0066cc;
+        }
+    
+        /* Grid Layout */
         .container {
             display: grid;
-            grid-template-columns: 1fr 300px; /* Two columns */
-            grid-template-rows: auto auto; /* Two rows */
+            grid-template-columns: 1fr 300px;
+            grid-template-rows: auto;
             gap: 20px;
-            align-items: start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-
-        .main-content {
-            grid-column: 1 / 2; /* Span both columns */
-            grid-row: 1; /* First row */
-        }
-
-        .tabs {
-            grid-column: 1; /* First column */
-            grid-row: 2; /* Second row */
-            display: flex; /* Use flexbox */
-            justify-content: space-evenly; /* Evenly space the tabs */
-            gap: 20px; /* Spacing between tabs */
-            align-items: center; /* Center align vertically */
-        }
-
-        .right-content {
-            grid-column: 2; /* Second column */
-            grid-row: 1; /* Second row */
-        }
-
+    
+        /* Panel Styling */
         .panel {
-            border: 1px solid #ccc;
-            padding: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-
+    
+        /* Main Content */
+        .main-content img {
+            float: left;
+            margin-right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .bio-text {
+            overflow: hidden;
+        }
+    
+        /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 20px 0;
+            border-bottom: 2px solid #eee;
+        }
+    
         .tab {
-        background-color: #9dd4ec; /* Light blue */
-        border: none;
-        outline: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        font-size: 16px;
-        flex-grow: 1; /* Allow tabs to grow equally */
-        text-align: center; /* Center text */
-        transition: background-color 0.3s ease; /* Smooth transition */
-    }
-
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px 8px 0 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .tab:hover {
+            background-color: #357abf;
+            transform: scale(1.05);
+        }
+    
         .tab-content {
             display: none;
             padding: 15px;
-            border: 1px solid #ccc;
-            margin-top: 10px;
+            border: 1px solid #eee;
+            border-radius: 0 0 8px 8px;
+            margin-top: -1px;
+        }
+    
+        .tab.active {
+            background-color: #357abf;
+        }
+    
+        .tab-content.active {
+            display: block;
+        }
+    
+        /* Right Content Section */
+        .right-content {
+            background: #f1f5fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Lists */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+    
+        /* Buttons */
+        button {
+            font-family: inherit;
+        }
+    
+        /* Footer (if needed) */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4a90e2;
+            color: white;
         }
     </style>
+    
 
     <script src="js/vendor/custom.modernizr.js"></script>
 
@@ -112,8 +192,7 @@
                         <li><strong>[C.P.1]</strong> Yinuo Xu<sup>1</sup>, <u>Sushrita Rakshit</u><sup>1</sup>, Aparna Ananthasubramaniam<sup>1</sup>, Omkar Yadav<sup>1</sup>, Mingqian Zheng<sup>1</sup>, Michael Jiang<sup>1</sup>, Lechen Zhang<sup>1</sup>, Bowen Yi<sup>1</sup>, Kenan Alkiek<sup>1</sup>, Abraham Israeli<sup>1</sup>, Bangzhao Shu<sup>1</sup>, Hua Shen<sup>1</sup>, Jiaxin Pei<sup>1</sup>, Haotian Zhang<sup>1</sup>, Miriam Schirmer<sup>1</sup>, David Jurgens<sup>1</sup> (2024). <strong>Please Reply: Causally Modeling the Linguistic and Social Factors that Predict Email Response</strong>. Manuscript submitted to <i>NAACL</i>. <i>Note: the authorship order is first author randomized.</i></li>
                         <br>
                         <li><strong>[C.P.2]</strong> James Anthony Hale<sup>1</sup>, <u>Sushrita Rakshit</u><sup>2</sup>, Kushal Chawla<sup>3</sup>, Jeanne Brett<sup>4</sup>, Jonathan Gratch<sup>5</sup> (2024). <strong>KODIS: A Multicultural Dispute Resolution Dialogue Corpus</strong>. Manuscript submitted to <i>NAACL</i>.</li>
-                    </ul>
-                      
+                    </ul> 
                 </ul>
             </div>
             <div id="content2" class="tab-content">
@@ -130,23 +209,38 @@
                 </p>
             </div>
             <div id="content3" class="tab-content">
-                <p>Reach out to sushrita@umich.edu to chat some more!</p>
+                <p>Reach out to <a href="mailto:sushrita@umich.edu">sushrita@umich.edu</a> to chat some more!</p>
             </div>
+            
 
             <div id="content4" class="tab-content">
-                <ul>
-                    <ul>
-                        <li><strong>Knitting</li>
-                        <br>
-                        <li><strong>Singing. Fun fact: I have a degree in indian classical music and teach some students from my hometown!</li>
-                        <br>
-                        <li><strong>Reading</li>
-                        <br>
-                        <li><strong>Cafe Hopping!</li>
-                      </ul>
-                      
-                </ul>
+                <div class="hobbies-list">
+                    <div class="hobby-item">
+                        <i class="fa-brands fa-yarn"></i>
+                        <h3>Knitting</h3>
+                        <p>Crafting cozy designs with needles and yarn.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-microphone-alt"></i> 
+                        <h3>Singing</h3>
+                        <p>
+                            Fun fact: I have a degree in Indian classical music and teach students from my hometown!
+                        </p>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-book-open"></i> 
+                        
+                        <h3>Reading</h3>
+                        <p>Diving into books and exploring new worlds.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-coffee"></i> 
+                        <h3>Cafe Hopping</h3>
+                        <p>Exploring cozy cafes and discovering unique flavors.</p>
+                    </div>
+                </div>
             </div>
+            
         </div>
 
         <!-- Tabs Section -->

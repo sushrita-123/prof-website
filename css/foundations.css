@@ -4798,3 +4798,102 @@ meta.foundation-mq-small {
   td {
       font-weight:300;
   }
+
+  .tab-content {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.hobby-item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.tab-content .hobby-item:nth-child(odd) {
+  background: linear-gradient(135deg, #a2c2e8, #b0e0e6); /* Light blue gradient */
+  color: #fff;
+}
+
+.tab-content .hobby-item:nth-child(even) {
+  background: linear-gradient(135deg, #b0e0e6, #add8e6); /* Lighter blue gradient */
+  color: #fff;
+}
+
+.tab-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab-content ul li {
+  background: linear-gradient(135deg, #a2c2e8, #b0e0e6); /* Light blue gradient */
+  border: 2px solid #b0e0e6; /* Light border to enhance the box look */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content ul li a {
+  color: #0066cc; /* Blue color for links */
+  text-decoration: none;
+}
+
+.tab-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.tab-content ul li u {
+  color: #333;
+}
+
+.tab-content ul li sup {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.tab-content ul li strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.tab-content ul li:hover {
+  background: linear-gradient(135deg, #b0e0e6, #a2c2e8); /* Reverse the gradient on hover */
+  transform: scale(1.02); /* Slight scale-up on hover */
+  transition: transform 0.2s ease, background 0.2s ease; /* Smooth transition */
+}
