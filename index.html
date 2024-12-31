@@ -23,33 +23,33 @@
             background-color: #f9f9f9;
             color: #333;
         }
-    
+
         h1 {
             font-weight: 300;
             color: #4a90e2;
         }
-    
+
         a {
             color: #4bb9d2;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-    
+
         a:hover {
             color: #0066cc;
         }
-    
+
         /* Grid Layout */
         .container {
             display: grid;
-            grid-template-columns: 7fr 1fr;
+            grid-template-columns: 1fr 300px;
             grid-template-rows: auto;
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
             margin: auto;
         }
-    
+
         /* Panel Styling */
         .panel {
             background: #ffffff;
@@ -57,22 +57,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
-    
+
         /* Main Content */
         .main-content img {
-    float: left;
-    margin-right: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ccc; /* Adds a 2px solid light gray border */
-    border-radius: 5px; /* Optional: makes the corners rounded */
-}
+            float: left;
+            margin-right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    
         .bio-text {
             overflow: hidden;
         }
-    
+
         /* Tabs */
         .tabs {
             display: flex;
@@ -81,7 +77,7 @@
             margin: 20px 0;
             border-bottom: 2px solid #eee;
         }
-    
+
         .tab {
             background-color:#67b7e9;
             color: white;
@@ -91,14 +87,13 @@
             font-size: 16px;
             border-radius: 8px 8px 0 0;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            width: 200px;
         }
-    
+
         .tab:hover {
             background-color: #357abf;
             transform: scale(1.05);
         }
-    
+
         .tab-content {
             display: none;
             padding: 15px;
@@ -106,15 +101,15 @@
             border-radius: 0 0 8px 8px;
             margin-top: -1px;
         }
-    
+
         .tab.active {
             background-color: #357abf;
         }
-    
+
         .tab-content.active {
             display: block;
         }
-    
+
         /* Right Content Section */
         .right-content {
             background: #f1f5fa;
@@ -122,23 +117,23 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-    
+
         /* Lists */
         ul {
             list-style-type: none;
             padding: 0;
         }
-    
+
         li {
             margin: 10px 0;
             line-height: 1.6;
         }
-    
+
         /* Buttons */
         button {
             font-family: inherit;
         }
-    
+
         /* Footer (if needed) */
         footer {
             text-align: center;
@@ -147,7 +142,7 @@
             color: white;
         }
     </style>
-    
+
 
     <script src="js/vendor/custom.modernizr.js"></script>
 
@@ -172,37 +167,23 @@
                 <img src="images/sushi.png" width="400px" alt="It's me, Sushrita Rakshit!" class="bio-image">
                 <div class="bio-text">
                     <p>Hello! My name is Sushrita (suh-shree-tah) and I'm a senior at the University of Michigan. I'm currently a part of the BLABLABLAB here at UMich and was previously a part of the Affective Computing Group at the University of Southern California.</p>
-                    </p>
                     <p>
-                        I've had the privilege of being mentored by remarkable scholars such as 
-                        <span style="color: green;">David Jurgens</span>, 
-                        <span style="color: green;">Jonathan Gratch</span>, and 
-                        <span style="color: green;">Hua Shen</span>. My primary research interests include 
-                        <span style="color: blue;">LLM interpretability</span>, as well as the intersection of 
-                        <span style="color: blue;">NLP</span>, <span style="color: blue;">HCI</span>, and 
-                        <span style="color: blue;">cognitive science</span>. I am deeply passionate about advancing 
-                        <span style="color: blue;">trustworthy AI systems</span> that not only mimic human behavior but do so in a way that aligns with 
-                        <span style="color: blue;">human values and understanding</span>.
-                        I strongly believe that to accurately simulate human behavior, we must first deeply understand it—a principle that drives my current and future research.
-                    </p>
-                    <p>
-                        I'm excited to announce that I'll be applying as a PhD student this year! If you're interested in collaborating or learning more about my work, feel free to reach out.
+                        I'll be applying as a PhD student this time of year! If you're interested, please reach out! I've been fortunate enough to be mentored by great minds like David Jurgens, Jonathan Gratch, and Hua Shen. My primary interests lie in LLM interpretability, the intersection of NLP and HCI, and understanding how we can make more trustworthy AI systems that mimic human behavior. I'm a strong believer that humans must be understood in order to artificiate their behavior and I intend to make this a large focus of my research questions!
+                    I'll be applying as a PhD student this time of year! If you're interested, please reach out! I've been fortunate enough to be mentored by great minds like David Jurgens, Jonathan Gratch, and Hua Shen. My primary interests lie in LLM interpretability, the intersection of NLP and HCI, and understanding how we can make more trustworthy AI systems that mimic human behavior. I'm a strong believer that humans must be understood in order to artificiate their behavior and I intend to make this a large focus of my research questions!
                     </p>
                 </div>
             </div> <br>
 
-            
+
 
             <div class="tabs panel">
                 <button class="tab" data-target="content1">Publications</button>
                 <button class="tab" data-target="content2">Projects</button>
-                <button class="tab" data-target="content5">Awards</button>
-                <button class="tab" data-target="content4">Some Hobbies</button>
                 <button class="tab" data-target="content3">Contact Me</button>
-                
-                
+                <button class="tab" data-target="content4">Some Hobbies</button>
+                <button class="tab" data-target="content5">Awards</button>
             </div>
-            
+
             <div id="content1" class="tab-content">
                 <div class="publications-legend-box">
                     <p><strong>Legend:</strong></p>
@@ -269,11 +250,11 @@
                             </div>
                         </div>
                     </li>
-                    
+
                 </ul>
             </div>
-            
-            
+
+
             <div id="content2" class="tab-content">
                 <div class="section">
                     <strong>Current</strong>
@@ -294,18 +275,18 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div id="content3" class="tab-content">
                 <p>Reach out to <a href="mailto:sushrita@umich.edu">sushrita@umich.edu</a> to chat some more!</p>
             </div>
-            
+
 
             <div id="content4" class="tab-content">
                 <div class="hobbies-list">
                     <div class="hobby-item">
-                        <i class="fas fa-book-open"></i> 
-                        <h3>Digital Scrapbooking</h3>
-                        <a href="https://sushrita-123.github.io/photo-album/index.html" target="_blank">Sushi's Fun Depo</a>
+                        <i class="fa-brands fa-yarn"></i>
+                        <h3>Knitting</h3>
+                        <p>Crafting cozy designs with needles and yarn.</p>
                     </div>
                     <div class="hobby-item">
                         <i class="fas fa-microphone-alt"></i> 
@@ -316,7 +297,7 @@
                     </div>
                     <div class="hobby-item">
                         <i class="fas fa-book-open"></i> 
-                        
+
                         <h3>Reading</h3>
                         <p>Diving into books and exploring new worlds.</p>
                     </div>
@@ -327,7 +308,6 @@
                     </div>
                 </div>
             </div>
-            
 
             <div id="content5" class="tab-content">
                 <div class="hobbies-list">
@@ -342,7 +322,7 @@
         </div>
 
         <!-- Tabs Section -->
-        
+
 
         <!-- Right Content Section -->
         <div class="right-content panel">
@@ -381,33 +361,33 @@
             const tabs = document.querySelectorAll('.tab');
             // Select all tab contents
             const tabContents = document.querySelectorAll('.tab-content');
-    
+
             tabs.forEach(tab => {
                 tab.addEventListener('click', function () {
                     // Hide all tab contents
                     tabContents.forEach(content => content.style.display = 'none');
-    
+
                     // Remove 'active' class from all tabs
                     tabs.forEach(t => t.classList.remove('active'));
-    
+
                     // Show the selected tab content
                     const target = document.getElementById(tab.getAttribute('data-target'));
                     if (target) {
                         target.style.display = 'block';
                     }
-    
+
                     // Add 'active' class to the clicked tab
                     tab.classList.add('active');
                 });
             });
-    
+
             // Optionally, trigger the first tab click to show the initial content
             if (tabs.length > 0) {
                 tabs[0].click();
             }
         });
     </script>
-    
+
 </body>
 
 
