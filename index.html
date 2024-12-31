@@ -42,7 +42,7 @@
         /* Grid Layout */
         .container {
             display: grid;
-            grid-template-columns: 1fr 300px;
+            grid-template-columns: 7fr 1fr;
             grid-template-rows: auto;
             gap: 20px;
             padding: 20px;
@@ -60,10 +60,14 @@
     
         /* Main Content */
         .main-content img {
-            float: left;
-            margin-right: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc; /* Adds a 2px solid light gray border */
+    border-radius: 5px; /* Optional: makes the corners rounded */
+}
+
     
         .bio-text {
             overflow: hidden;
@@ -87,6 +91,7 @@
             font-size: 16px;
             border-radius: 8px 8px 0 0;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 200px;
         }
     
         .tab:hover {
@@ -164,11 +169,24 @@
             <h1>Sushrita Rakshit</h1>
             
             <div class="bio-container">
-                <img src="images/sushrita.png" width="400px" alt="It's me, Sushrita Rakshit!" class="bio-image">
+                <img src="images/sushi.png" width="400px" alt="It's me, Sushrita Rakshit!" class="bio-image">
                 <div class="bio-text">
                     <p>Hello! My name is Sushrita (suh-shree-tah) and I'm a senior at the University of Michigan. I'm currently a part of the BLABLABLAB here at UMich and was previously a part of the Affective Computing Group at the University of Southern California.</p>
+                    </p>
                     <p>
-                    I'll be applying as a PhD student this time of year! If you're interested, please reach out! I've been fortunate enough to be mentored by great minds like David Jurgens, Jonathan Gratch, and Hua Shen. My primary interests lie in LLM interpretability, the intersection of NLP and HCI, and understanding how we can make more trustworthy AI systems that mimic human behavior. I'm a strong believer that humans must be understood in order to artificiate their behavior and I intend to make this a large focus of my research questions!
+                        I've had the privilege of being mentored by remarkable scholars such as 
+                        <span style="color: green;">David Jurgens</span>, 
+                        <span style="color: green;">Jonathan Gratch</span>, and 
+                        <span style="color: green;">Hua Shen</span>. My primary research interests include 
+                        <span style="color: blue;">LLM interpretability</span>, as well as the intersection of 
+                        <span style="color: blue;">NLP</span>, <span style="color: blue;">HCI</span>, and 
+                        <span style="color: blue;">cognitive science</span>. I am deeply passionate about advancing 
+                        <span style="color: blue;">trustworthy AI systems</span> that not only mimic human behavior but do so in a way that aligns with 
+                        <span style="color: blue;">human values and understanding</span>.
+                        I strongly believe that to accurately simulate human behavior, we must first deeply understand it—a principle that drives my current and future research.
+                    </p>
+                    <p>
+                        I'm excited to announce that I'll be applying as a PhD student this year! If you're interested in collaborating or learning more about my work, feel free to reach out.
                     </p>
                 </div>
             </div> <br>
@@ -178,9 +196,11 @@
             <div class="tabs panel">
                 <button class="tab" data-target="content1">Publications</button>
                 <button class="tab" data-target="content2">Projects</button>
-                <button class="tab" data-target="content3">Contact Me</button>
-                <button class="tab" data-target="content4">Some Hobbies</button>
                 <button class="tab" data-target="content5">Awards</button>
+                <button class="tab" data-target="content4">Some Hobbies</button>
+                <button class="tab" data-target="content3">Contact Me</button>
+                
+                
             </div>
             
             <div id="content1" class="tab-content">
