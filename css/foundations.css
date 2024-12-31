@@ -4807,30 +4807,52 @@ meta.foundation-mq-small {
 }
 
 .hobbies-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 0 10px;  /* Adding padding to prevent edge-to-edge layout */
+  box-sizing: border-box;
 }
 
 .hobby-item {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;  /* Prevent overflow */
 }
 
 .hobby-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .hobby-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
 }
+
+/* Make the grid responsive for smaller screens */
+@media (max-width: 768px) {
+  .hobbies-list {
+      grid-template-columns: 1fr;  /* Switch to 1 column on smaller screens */
+      gap: 15px;  /* Reduce gap for mobile view */
+  }
+  
+  .hobby-item {
+      padding: 10px;  /* Adjust padding for smaller screens */
+  }
+
+  .hobby-icon {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+
 
 h3 {
     font-size: 1.5rem;
