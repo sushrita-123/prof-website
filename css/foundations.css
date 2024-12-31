@@ -4837,20 +4837,37 @@ meta.foundation-mq-small {
 
 /* Make the grid responsive for smaller screens */
 @media (max-width: 768px) {
+  /* Hobbies - 1 column on mobile */
   .hobbies-list {
-      grid-template-columns: 1fr;  /* Switch to 1 column on smaller screens */
-      gap: 15px;  /* Reduce gap for mobile view */
+      grid-template-columns: 1fr;
+      gap: 15px;  /* Smaller gap on mobile */
   }
-  
+
   .hobby-item {
-      padding: 10px;  /* Adjust padding for smaller screens */
+      padding: 10px;  /* Reduced padding on mobile */
   }
 
   .hobby-icon {
       width: 40px;
       height: 40px;
   }
+
+  /* Awards - 1 column on mobile */
+  .awards-list {
+      grid-template-columns: 1fr;
+      gap: 15px;  /* Smaller gap on mobile */
+  }
+
+  .award-item {
+      padding: 10px;  /* Reduced padding on mobile */
+  }
+
+  /* Prevent any body overflow */
+  body {
+      overflow-x: hidden;
+  }
 }
+
 
 
 
