@@ -1,555 +1,249 @@
+
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J5GBRCB5R"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-3J5GBRCB5R');
-    </script>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushrita Rakshit</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>Sushrita's Professional Website</title>
-    <meta name="description" content="Welcome to Sushrita's personal/professional website, showcasing my work, experience, and projects.">
-    <meta name="keywords" content="Sushrita, portfolio, professional website, projects, developer">
-    <meta name="author" content="Sushrita">
-    <meta property="og:title" content="Sushrita's Professional Website">
-    <meta property="og:description" content="Check out Sushrita's portfolio and professional work.">
-    <meta property="og:url" content="https://sushrita-123.github.io/prof-website/">
-    <meta property="og:image" content="your-image-url">
-    <meta name="robots" content="index, follow">
 
 
-    <link rel="stylesheet" href="css/foundations.css">
+    <!-- Modern Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <style>
-        .scrollable-div {
-            width: 280px;
-            height: 200px;
-            overflow-y: auto;
-            overflow-x: hidden;
-            border: 1px solid #ccc;
-            padding: 10px;
-            background-color: #f9f9f9;
-            margin: auto; /* Centers the div horizontally */
-            margin-left: -20px;
-            transform: translate(5%, 0%);
-
-        }
-        strong, b {
-            font-weight: bold;
-        }
-
-.scrollable-div::-webkit-scrollbar {
-    width: 8px;          /* Width of the scrollbar */
-}
-
-.scrollable-div::-webkit-scrollbar-thumb {
-    background: #888;    /* Color of the scrollbar thumb */
-    border-radius: 4px;  /* Rounded corners for the scrollbar thumb */
-}
-
-.scrollable-div::-webkit-scrollbar-thumb:hover {
-    background: #555;    /* Darker shade on hover */
-}
-
-.scrollable-div::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the scrollbar track */
-}
-
-
-        body {
-            font-family: 'Raleway', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        h1 {
-            font-weight: 300;
-            color: #4a90e2;
-        }
-
-        a {
-            color: #4bb9d2;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #0066cc;
-        }
-
-        /* Grid Layout */
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            grid-template-rows: auto;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-            background-color: #c5e3ec;
-        }
-
-        /* Panel Styling */
-        .panel {
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        /* Main Content */
-        .main-content img {
-    float: left;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #67b7e9; /* Change #ccc to your preferred border color */
-    border-radius: 5px; /* Optional: for rounded corners */
-}
-
-
-        .bio-text {
-            overflow: hidden;
-        }
-
-        /* Tabs */
-        .tabs {
-            display: flex;
-            justify-content: space-around;
-            padding: 0;
-            margin: 20px 0;
-            border-bottom: 2px solid #eee;
-            
-        }
-
-        .tab {
-            background-color:#67b7e9;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 8px 8px 0 0;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            flex: 0 0 20%; 
-            
-        }
-
-        .tab:hover {
-            background-color: #357abf;
-            transform: scale(1.05);
-        }
-
-        .tab-content {
-            display: none;
-            padding: 15px;
-            border: 1px solid #eee;
-            border-radius: 0 0 8px 8px;
-            margin-top: -1px;
-        }
-
-        .tab.active {
-            background-color: #357abf;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        /* Right Content Section */
-        .right-content {
-            background: #f1f5fa;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Lists */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-
-        /* Buttons */
-        button {
-            font-family: inherit;
-        }
-
-        /* Footer (if needed) */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #4a90e2;
-            color: white;
-        }
-    </style>
-
-
-    <script src="js/vendor/custom.modernizr.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116065959-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-116065959-1');
-        
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-116065959-1');
     </script>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- Main Content Section -->
-        <div class="main-content panel">
-            <h1>Hi it's me Sushrita!</h1> 
-            
-            <div class="bio-container">
-                <img src="images/pfp.png" width="40%" alt="It's me, Sushrita Rakshit!" class="bio-image">
-                <div class="bio-text">
-                    <p>Hello! My name is Sushrita Rakshit (pronounced suh-shree-tah). I am a senior at the University of Michigan, where I am advised by <a href="https://www.si.umich.edu/people/david-jurgens" target="_blank">David Jurgens</a> at the <a href="https://blablablab.si.umich.edu/" target="_blank">BLABLABLAB</a>. 
-                        Previously, I was part of the <a href="https://ict.usc.edu/research/labs-groups/affective-computing/" target="_blank">Affective Computing Group</a> at the University of Southern California, where I was advised by <a href="https://viterbi.usc.edu/directory/faculty/Gratch/Jonathan" target="_blank">Jonathan Gratch</a>.</p>
-                        <p>
-                            My primary research interests lie in 
-                            &#x2460; exploring human behavior and 
-                            &#x2461; Theory of Mind and behavior of large language models (LLMs), both fields that sit at the intersection of human-centered NLP and cognitive science. 
-                            I am deeply passionate about advancing trustworthy human-centered AI systems that align with human values and cognitive processes. 
-                            To achieve this, I employ a range of empirical methods to assess the strengths and limitations of these models. 
-                            In the long run, I aim for my work to interpret social behaviors and match behavioral patterns when interacting with humans.
-                        </p>
-                        <br>
-                        
-                    
-                </div>
+      <div class="main-content">
+        <div class="content-main">
+          <h1>Hi! It's me, Sushrita Rakshit 👋 </h1>
 
+          <div class="profile-section">
+            <img src="pfp.png" alt="It's me, Sushrita Rakshit!" class="profile-image">
+            <div class="profile-text">
+              <p>
+                I'm fascinated by how humans behave and how machines think they behave. My work lives at the intersection of AI/ML, human-computer interaction (HCI), and computational social science, where I explore both sides of the human-AI relationship.<br>
+                Most of my research focuses on language as a window into cognition: how people communicate through text and speech, how models interpret that communication, and what happens when the two interact. From emotionally-aware dialogue agents to human-AI alignment in conversation, I'm drawn to questions that blend language, behavior, and understanding.
+              </p>
 
-                
-            </div> <br>
-            
-            
-            
-
-
-
-            <div class="tabs panel">
-                <button class="tab" data-target="content1">Publications</button>
-                
-                <button class="tab" data-target="content2">Projects</button>
-                <button class="tab" data-target="content4">Some Hobbies</button>
-                <button class="tab" data-target="content5">Awards/Grants</button>
-                <button class="tab" data-target="content3">Contact Me</button>
-            </div> 
-
-            <div id="content1" class="tab-content">
-                <div class="publications-legend-box">
-                    <p><strong>Legend:</strong></p>
-                    <p>
-                        <span class="legend-item"><strong>C</strong> = Conference,</span> 
-                        <span class="legend-item"><strong>J</strong> = Journal,</span> 
-                        <span class="legend-item"><strong>W</strong> = Workshop,</span> 
-                        <span class="legend-item"><strong>P</strong> = In Review</span>
-                    </p>
-                    <p><i>e.g., <strong>C.P.1</strong> denotes Conference submission in review.</i></p>
-                </div>
-                <ul>
-                    <li>
-                        <div class="publication-item">
-                            <div class="publication-image">
-                                <img src="images/regparam.png" alt="Publication Image">
-                            </div>
-                            <div class="publication-text">
-                                <strong>[C.P.1]</strong> <u>Sushrita Rakshit</u><sup>1</sup>, James Hale<sup>2</sup>, Kushal Chawla<sup>3</sup>, Jeanne Brett<sup>4</sup>, Jonathan Gratch<sup>5</sup> (2024). <strong>Towards Emotionally-Aware Agents for Dispute Resolution</strong>. Manuscript accepted to <i>ACII 2025</i>.
-                            </div>
-                        </div>
-                    </li>
-                    <br>
-                    <li>
-                        <div class="publication-item">
-                            <div class="publication-image">
-                                <img src="images/kodis.png" alt="Publication Image">
-                            </div>
-                            <div class="publication-text">
-                                <strong>[C.2]</strong> James Anthony Hale<sup>1</sup>, <u>Sushrita Rakshit</u><sup>2</sup>, Kushal Chawla<sup>3</sup>, Jeanne Brett<sup>4</sup>, Jonathan Gratch<sup>5</sup> (2024). <strong>KODIS: A Multicultural Dispute Resolution Dialogue Corpus</strong>. Manuscript accepted to main conference at <i>NAACL 2025</i>.
-                            </div>
-                        </div>
-                    </li>
-                    <br>
-                    <li>
-                        <div class="publication-item">
-                            <div class="publication-image">
-                                <img src="images/bidirection.png" alt="Publication Image">
-                            </div>
-                            <div class="publication-text">
-                                <strong>[J.P.1]</strong> Hua Shen<sup>1</sup>, Tiffany Knearem<sup>2</sup>, Reshmi Ghosh<sup>2</sup>, Kenan Alkiek<sup>3</sup>, Kundan Krishna<sup>3</sup>, Yachuan Liu<sup>3</sup>, Ziqiao Ma<sup>3</sup>, Savvas Petridis<sup>3</sup>, Yi-Hao Peng<sup>3</sup>, Li Qiwei<sup>3</sup>, <u>Sushrita Rakshit</u><sup>3</sup>, Chenglei Si<sup>3</sup>, Yutong Xie<sup>3</sup>, Jeffrey P. Bigham<sup>4</sup>, Frank Bentley<sup>4</sup>, Joyce Chai<sup>4</sup>, Zachary Lipton<sup>4</sup>, Qiaozhu Mei<sup>4</sup>, Rada Mihalcea<sup>4</sup>, Michael Terry<sup>4</sup>, Diyi Yang<sup>4</sup>, Meredith Ringel Morris<sup>5</sup>, Paul Resnick<sup>5</sup>, David Jurgens<sup>5</sup> (2024). <strong><a href="https://arxiv.org/abs/2406.09264">Towards Bidirectional Human-AI Alignment: A Systematic Review for Clarifications, Framework, and Future Directions</a></strong>. <i>arXiv preprint</i>, arXiv:2406.09264. Manuscript submitted to <i>NeurIPS Position Paper Track</i>.
-
-                            </div>
-                        </div>
-                    </li>
-                    <br>
-                    <li>
-                        <div class="publication-item">
-                            <div class="publication-image">
-                                <img src="images/realrobotic.png" alt="Publication Image">
-                            </div>
-                            <div class="publication-text">
-                                <strong>[C.P.2]</strong> Jonathan Ivey<sup>1</sup>, Shivani Kumar<sup>1</sup>, Jiayu Liu<sup>1</sup>, Hua Shen<sup>1</sup>, <u>Sushrita Rakshit</u><sup>1</sup>, Rohan Raju<sup>1</sup>, Haotian Zhang<sup>1</sup>, Aparna Ananthasubramaniam<sup>1</sup>, Junghwan Kim<sup>1</sup>, Bowen Yi<sup>1</sup>, Dustin Wright<sup>1</sup>, Abraham Israeli<sup>1</sup>, Anders Moller<sup>1</sup>, Lechen Zhang<sup>1</sup> (2024). <strong><a href="https://arxiv.org/pdf/2409.08330">Real or Robotic? Assessing Whether LLMs Accurately Simulate Qualities of Human Responses in Dialogue</a></strong>. Manuscript Submitted to <i>NAACL 2025</i>. <i>Note: the authorship order is first author randomized.</i>
-                            </div>
-                        </div>
-                    </li>
-                    <br>
-                    <li>
-                        <div class="publication-item">
-                            <div class="publication-image">
-                                <img src="images/teaser.png" alt="Publication Image">
-                            </div>
-                            <div class="publication-text">
-                                <strong>[C.1]</strong> Yinuo Xu<sup>1</sup>, <u>Sushrita Rakshit</u><sup>1</sup>, Aparna Ananthasubramaniam<sup>1</sup>, Omkar Yadav<sup>1</sup>, Mingqian Zheng<sup>1</sup>, Michael Jiang<sup>1</sup>, Lechen Zhang<sup>1</sup>, Bowen Yi<sup>1</sup>, Kenan Alkiek<sup>1</sup>, Abraham Israeli<sup>1</sup>, Bangzhao Shu<sup>1</sup>, Hua Shen<sup>1</sup>, Jiaxin Pei<sup>1</sup>, Haotian Zhang<sup>1</sup>, Miriam Schirmer<sup>1</sup>, David Jurgens<sup>1</sup> (2024). <strong>Please Reply: Causally Modeling the Linguistic and Social Factors that Predict Email Response</strong>. Manuscript accepted to main conference at <i>NAACL 2025</i>. <i>Note: the authorship order is first author randomized.</i>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
+              <div class="notice-box">
+                <strong>PhD Applications</strong>: I am applying for PhD positions in the Fall 2026 cycle! Please reach out to me if you see any compatibility in our research interests!
+              </div>
             </div>
+          </div>
 
+          <div class="tab-navigation">
+            <button class="tab-button active" onclick="showTab(this, 'publications')">Publications</button>
+            <button class="tab-button" onclick="showTab(this, 'teaching')">Teaching</button>
+            <button class="tab-button" onclick="showTab(this, 'research')">Research</button>
+            <button class="tab-button" onclick="showTab(this, 'faqs')">FAQs</button>
+          </div>
 
-            <div id="content2" class="tab-content">
-                <div class="section">
-                    <strong>Current</strong>
-                    <span class="icon-title"> ⏩ ⏳ </span>
-                    <ul class="item-list">
-                        <li><span class="icon">🔍</span> How do we close knowledge gaps? Mental state updates in LLMs and Question-asking techniques.</li>
-                    </ul>
-                </div>
-                <div class="section">
-                    <strong>Previous</strong> 
-                    <span class="icon-title"> ⏮️ ⌛ </span>
-                    <ul class="item-list">
-                        <li><span class="icon">📍</span> Spatial Understanding of LLMs</li>
-                        <li><span class="icon">🤖</span> Opponent Modeling within Dispute Resolution</li>
-                        <li><span class="icon">📈</span> Causal Modeling of Emotions to Predict and Represent Dispute Satisfactions</li>
-                        <li><span class="icon">💬</span> Causal Modeling of Email Intent (GMANE Dataset)</li>
-                        <li><span class="icon">🌐</span> Simulating Humans Utilizing LLMs (WildChat)</li>
-                        <li><span class="icon">🧭</span> Human Values and RLHF (Independent study advised by&nbsp;<a href="https://hua-shen.org/">Hua Shen</a>)</li><br>
-
-                    </ul>
+          <div class="tab-content-container">
+            <div class="section-content active" id="publications">
+              
+    <div class="publications-container">
+        <div class="year-navigation">
+            <button class="year-button" onclick="scrollToYear(2025)">2025</button><button class="year-button" onclick="scrollToYear(2024)">2024</button>
+        </div>
+        <div class="publications-list">
+            
+        
+        <div class="publication-card" data-year="2025">
+            <div class="publication-content">
+                <img class="publication-image" alt="NUTMEG is an alternative to MACE for identifying ground truth when groups of annotators systematically disagree." src="acii.png"/>
+                <div class="publication-info">
+                    <h3><a href="https://arxiv.org/abs/2507.18890">Towards Emotionally-Aware Agents for Dispute Resolution</a></h3>
+                    <div class="publication-authors">Sushrita Rakshit, James Hale, Kushal Chawla, Jeanne Brett, Jonathan Gratch</div>
+                    <div class="publication-venue">Affective Computing and Intelligent Interaction (ACII)</div>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/pdf/2509.04465" class="link-paper">📄 paper</a>
+                    </div>
+        
                 </div>
             </div>
-
-            <div id="content3" class="tab-content">
-                <h3>Emails</h3>
-                
-                <h>Please note my ICT email is no longer active. Please direct all questions to my U-M email!</h>
-                <ul class="item-list">
-                    <li><span class="icon"><i class="fas fa-envelope"></i></span><a href="mailto:sushrita@umich.edu">sushrita@umich.edu</a> </li>
-                    <li>
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <a href="mailto:srakshit@ict.usc.edu">srakshit@ict.usc.edu</a>
-                      </li>
-                </ul>
-                <h3>Socials</h3>
-                <ul class="item-list">
-                    <li><span class="icon"><i class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/sushrita-rakshit-036611227/" target="_blank">Sushrita Rakshit</a></li>
-                    <li><span class="icon"><i class="fab fa-twitter"></i></span><a href="https://x.com/Sushrita22" target="_blank">@Sushrita22</a></li>
-                    <li><span class="icon"><i class="fab fa-orcid"></i></span><a href="https://orcid.org/0009-0008-3485-9637" target="_blank">Check out my Orcid</a></li>
-                    <li><span class="icon"><i class="fab fa-google"></i></span><a href="https://scholar.google.com/citations?user=NhB6bukAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-                </ul>
-            </div>
-            
-
-
-            <div id="content4" class="tab-content">
-                <div class="hobbies-list">
-                    <div class="hobby-item">
-                        <i class="fas fa-camera"></i>
-                        <h3>Digital Scrapbooking</h3>
-                        <p><a href="https://sushrita-123.github.io/photo-album/index.html">Check out Sushi's Fun Depo!</a></p>
+        </div>
+        
+        <div class="publication-card" data-year="2025">
+            <div class="publication-content">
+                <img class="publication-image" alt="" src="naacl-kodis.png"/>
+                <div class="publication-info">
+                    <h3><a href="https://arxiv.org/abs/2502.14409">KODIS: A Multicultural Dispute Resolution Dialogue Corpus</a></h3>
+                    <div class="publication-authors">James Hale, Sushrita Rakshit, Kushal Chawla, Jeanne M. Brett, Jonathan Gratch</div>
+                    <div class="publication-venue">North American Chapter of the Association for Computational Linguistics (NAACL)</div>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2504.12723" class="link-paper">📄 paper</a>
+        
                     </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-microphone-alt"></i> 
-                        <h3>Singing</h3>
-                        <p>
-                            Fun fact: I have a degree in Indian classical music and teach students from my hometown!
-                        </p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-book-open"></i> 
-
-                        <h3>Reading</h3>
-                        <p>Diving into books and exploring new worlds.</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-coffee"></i> 
-                        <h3>Cafe Hopping</h3>
-                        <p>Exploring cozy cafes and discovering unique flavors.</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-tshirt"></i> 
-                        <h3>Knitting</h3>
-                        <p>Half my sweaters are self-knit!</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-running"></i> 
-                        <h3>Running</h3>
-                        <p>I'm training for a 5k!</p>
-                    </div>
+        
                 </div>
             </div>
-
-            <div id="content5" class="tab-content">
-                <div class="hobbies-list">
-                    <div class="hobby-item">
-                        <i class="fa fa-trophy" aria-hidden="true"></i>
-                        <h3>Honorable Mention</h3>
-                        <p>Computing Research Association (CRA) Outstanding Undergraduate Researcher</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fa fa-trophy" aria-hidden="true"></i>
-                        <h3>NSF REU Fellowship</h3>
-                        <p>$8,650 awarded by The University of Southern California</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fa fa-trophy" aria-hidden="true"></i>
-                        <h3>Dean's List x4</h3>
-                        <p>The University of Michigan College of Engineering</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div id="content6" class="tab-content">
-                <div class="hobbies-list">
-                    <div class="hobby-item">
-                        <img src="images/symposium.png" alt="Trophy Icon" class="custom-icon">
-                        <h3>Spatial Reasoning in LLMs</h3>
-                        <p>MSLD 2024</p>
-                    </div>
-                    <div class="hobby-item">
-                        <img src="images/symposium.png" alt="Trophy Icon" class="custom-icon">
-                        <h3>Causal Modeling in Emails</h3>
-                        <p>NAACL 2024</p>
-                    </div>
-                    <div class="hobby-item">
-                        <img src="images/symposium.png" alt="Trophy Icon" class="custom-icon">
-                        <h3>KODIS: Cultural Dispute Corpus</h3>
-                        <p>NAACL 2024</p>
-                    </div>
-
-                    <div class="hobby-item">
-                        <img src="images/symposium.png" alt="Trophy Icon" class="custom-icon">
-                        <h3>Real or Robotic</h3>
-                        <p>IC2S2 2025</p>
-                    </div>
-
-                    <div class="hobby-item">
-                        <img src="images/symposium.png" alt="Trophy Icon" class="custom-icon">
-                        <h3>Emotion Modeling in Disputes</h3>
-                        <p>SoCal Summer Symposium</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            
-            
         </div>
 
-        <!-- Tabs Section -->
-
-
-        <!-- Right Content Section -->
-        <div class="right-content panel">
-
-            <hr>
-                <p style="font-size: 14px">
-                    Undergraduate Student, <br /> Conducting research in the <a href="https://www.si.umich.edu/">School of Information</a> and obtaining my degree from <a href="http://cse.umich.edu/cse/">Department of Computer Science &amp; Engineering</a>, <br />
-                    <a href="http://umich.edu/">University of Michigan</a><br />
-                </p>
-                
-
-
-                
-                
-
-
-                <hr />
-                <p>Undergraduate researcher for the <a href="http://blablablab.si.umich.edu/">Blablablab</a></p>
-                <img src="images/blablablab-logo.webp" width="240px" alt="The lab!" class="bio-image">
-
-
-
-                <br />
-                <p><a href="http://css.si.umich.edu">Computational Social Science, Natural Language Processing, Human-Computer Interaction at UMSI</a></p>
-                
-                <hr />
-                <p>Previous visiting researcher for  <a href="https://ict.usc.edu/research/labs-groups/affective-computing/">Affective Computing Group</a></p>
-                <img src="images/ict.jpg" width="240px" alt="The lab!" class="bio-image">
-                <p><a href="https://ict.usc.edu/research/labs-groups/affective-computing/">Natural Language Dialogue, Automatic Emotion Recognition, Dialogue Modeling at USC</a></p>
-
-                <hr />
-                <p>
-                    <a href="docs/Sushrita_Rakshit_CV_Updated.pdf">Curriculum Vitae</a><br />
-                    <a href="https://scholar.google.com/citations?user=NhB6bukAAAAJ&hl=en">Google Scholar</a><br />
-                    <a href="https://www.linkedin.com/in/sushrita-rakshit-036611227/">LinkedIn</a><br />
-                </p>
-                <hr>
-                
-                
-                
+        <div class="publication-card" data-year="2025">
+            <div class="publication-content">
+                <img class="publication-image" alt="" src="gmane.png"/>
+                <div class="publication-info">
+                    <h3><a href="https://arxiv.org/abs/2502.14409">Please Reply: Causally Modeling the Linguistic and Social Factors that Predict Email Response</a></h3>
+                    <div class="publication-authors">Yinuo Xu, Hong Chen, Sushrita Rakshit, Aparna Ananthasubramaniam, Omkar Yadav, Mingqian Zheng, Michael Jiang, Lechen Zhang, Bowen Yi, Kenan Alkiek, Abraham Israeli, Bangzhao Shu, Hua Shen, Jiaxin Pei, Haotian Zhang, Miriam Schirmer, David Jurgens</div>
+                    <div class="publication-venue">North American Chapter of the Association for Computational Linguistics (NAACL)</div>
+                    <div class="publication-links">
+                        <a href="https://aclanthology.org/2025.naacl-long.594.pdf" class="link-paper">📄 paper</a>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="publication-card" data-year="2024">
+            <div class="publication-content">
+                <img class="publication-image" alt="You can get systems to learn individual and group behaviors during annotation but only if you add structural priors to the model" src="bidir.png"/>
+                <div class="publication-info">
+                    <h3><a href="https://arxiv.org/abs/2508.02853?">Towards bidirectional human-AI alignment: a systematic review for clarifications, framework, and future directions. vol. abs/2406.09264</a></h3>
+                    <div class="publication-authors">Hua Shen, Tiffany Knearem, Reshmi Ghosh, Kenan Alkiek, Kundan Krishna, Yachuan Liu, Ziqiao Ma, Savvas Petridis, Yi-Hao Peng, Li Qiwei, Sushrita Rakshit, Chenglei Si, Yutong Xie, Jeffrey P. Bigham, Frank Bentley, Joyce Chai, Zachary Lipton, Qiaozhu Mei, Rada Mihalcea, Michael Terry, Diyi Yang, Meredith Ringel Morris, Paul Resnick, David Jurgens</div>
+                    <div class="publication-venue"><i>NeurIPS 2025 Position Track</i></div>
+                    <div class="publication-links">
+                        <a href="https://www.yihaopeng.tw/pdf/bialign.pdf" class="link-paper">📄 paper</a>
+                        <a href="https://github.com/huashen218/bidirectional-alignment-reading-list/" class="link-data">💾 reading list</a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        <div class="publication-card" data-year="2024">
+            <div class="publication-content">
+                <img class="publication-image" alt="Optimizing the system and task parts of the prompt can have huge benefits" src="robot.png"/>
+                <div class="publication-info">
+                    <h3><a href="https://arxiv.org/abs/2410.14826">Real or robotic? Assessing whether LLMs accurately simulate qualities of human responses in dialogue</a></h3>
+                    <div class="publication-authors">Jonathan Ivey, Shivani Kumar, Jiayu Liu, Hua Shen, Sushrita Rakshit, Rohan Raju, Haotian Zhang, Aparna Ananthasubramaniam, Junghwan Kim, Bowen Yi, Dustin Wright, Abraham Israeli, Anders Giovanni Møller, Lechen Zhang, David Jurgens</div>
+                    <div class="publication-venue">preprint.</div>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2409.08330" class="link-paper">📄 paper</a>
+                        <a href="https://github.com/davidjurgens/human-llm-similarity" class="link-data">💾 data</a><a href="https://github.com/davidjurgens/human-llm-similarity" class="link-code">💻 code</a>
+                    </div>
+                    
+        
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Select all tab buttons
-            const tabs = document.querySelectorAll('.tab');
-            // Select all tab contents
-            const tabContents = document.querySelectorAll('.tab-content');
+    
+            </div>
 
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function () {
-                    // Hide all tab contents
-                    tabContents.forEach(content => content.style.display = 'none');
+            
 
-                    // Remove 'active' class from all tabs
-                    tabs.forEach(t => t.classList.remove('active'));
+            <div class="section-content" id="teaching">
+              <h3>In My Undergraduate Days:</h3>
+              <p>
+                Fall 2024: SI 301 595 -- Models of Social Information Processing (Network Science and Intro Game Theory)
+              </p>
 
-                    // Show the selected tab content
-                    const target = document.getElementById(tab.getAttribute('data-target'));
-                    if (target) {
-                        target.style.display = 'block';
-                    }
+              <p>
+               Winter 2025: SI 339 -- Web Design, Development, and Accessibility
+              </p>
 
-                    // Add 'active' class to the clicked tab
-                    tab.classList.add('active');
-                });
-            });
+              
+            </div>
 
-            // Optionally, trigger the first tab click to show the initial content
-            if (tabs.length > 0) {
-                tabs[0].click();
-            }
-        });
-    </script>
+            
 
-</body>
+            <div class="section-content" id="research">
+              <p>
+                Broadly, I conduct research in the areas of natural language
+                processing, human-ai collaboration, and some computational social science. The best way to define my work, as quoted by Hua Shen, is to "maximize compatibility and minimize risk" in Human-AI Co-evolution. Below are a few themes I break my work into:
 
+                <ul>
 
+                  <li><b>Human-AI Alignment and Socially Intelligent NLP</b>: 
+                    I design and evaluate language technologies that align with human values, behavior, and expectations—focusing on how humans and AI systems can understand, adapt to, and collaborate with one another in communication.
+                </li>
 
+                  <li><b>Emotionally and Culturally Grounded Dialogue Systems:</b>:  
+                    My work develops conversational agents that are sensitive to emotion, culture, and context—especially in high-stakes, moral, and emotional settings—by combining NLP with insights from psychology, social dynamics, and cross-cultural communication.
+                
+                </li>
+
+                  
+                </ul>
+              </p>
+
+              <p> My long term goal encompasses build AI systems that can genuinely understand and communicate with people, enabling more trustworthy, collaborative, and equitable human-AI interaction.
+               I mean this as not just through language, but through shared social, emotional, and cultural understanding</p>.
+            </div>
+
+            
+
+            <div class="section-content" id="faqs">
+              <p><b>Q: How do I pronounce your last name? </b><br/>
+                A: Roh-kheeth</p>
+
+              <p><b>Q: Why the mismatch? </b><br/>
+                A: <span style="font-size: 20pt"> 🤷</span></p>
+              <p><b>Q: Ok...what about your first name? </b><br/>
+                A: Sue-shree-tah</p>
+
+              <p><b>Q: What are you interested in? </b><br/>
+                A: Pickleball, reading, and cooking. I try and make a new eggless recipe every week (thanks to my allergic roomie). </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <h3>Contact & Affiliation</h3>
+          <p>
+            Current SWE @ Verizon,
+            Recent graduate from Department of Computer Science & Engineering,
+            University of Michigan
+          </p>
+
+          <p>
+            <a href="mailto:sushrita@umich.edu">sushrita@umich.edu</a><br/>
+          </p>
+
+          <hr/>
+          <p>Currently, I create AI infrastructure and tools at <a href="http://blablablab.si.umich.edu/">Verizon</a>. During this time, I'm also working on investigating interesting Human-AI problems with Hua Shen at NYU.</p>
+          <p>Previously, I was an undergraduate researcher at the <a href="http://blablablab.si.umich.edu/">Blablablab</a> under David Jurgens.</p>
+          <p>Also previously, I visited USC-ICT's <a href="http://blablablab.si.umich.edu/">Affective Computing Lab</a> as part of my funded NSF stay under Jonathan Gratch.</p>
+          <hr/>
+          <p>
+            <a href="https://scholar.google.com/citations?user=NhB6bukAAAAJ&hl=en">Google Scholar</a><br/>
+            <a href="https://x.com/Sushrita22">X</a><br/>
+          </p>
+
+          <hr/>
+
+          
+        </div>
+      </div>
+    </div>
+
+        <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
