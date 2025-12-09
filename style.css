@@ -115,12 +115,14 @@ p {
 }
 
 .profile-image {
-  width: 250px;
-  height: 400px;
+  width: 100%;        /* take full width of grid column */
+  height: auto;       /* scale height proportionally */
+  max-width: 250px;   /* optional max size */
   border-radius: var(--radius);
   object-fit: cover;
   box-shadow: var(--shadow-md);
 }
+
 
 .profile-text {
   font-size: 1.1rem;
