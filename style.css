@@ -115,8 +115,8 @@ p {
 }
 
 .profile-image {
-  width: 240px;
-  height: 260px;
+  width: 250px;
+  height: 400px;
   border-radius: var(--radius);
   object-fit: cover;
   box-shadow: var(--shadow-md);
