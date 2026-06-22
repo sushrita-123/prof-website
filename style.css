@@ -212,42 +212,41 @@ p {
   display: block;
 }
 
-/* Publications tab layout - completely isolated from main grid */
+/* Publications tab layout */
 .publications-container {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: var(--spacing-lg);
-  min-height: 600px;
-  /* Ensure this grid is independent of parent grid */
-  grid-column: 1;
   width: 100%;
+  min-height: auto;
 }
 
-/* Year navigation sidebar */
+/* Keep year jump nav, but no scrollbar */
 .year-navigation {
   background: var(--bg-accent);
   border-radius: var(--radius);
   padding: var(--spacing-sm);
-  overflow-y: auto;
-  max-height: 600px;
   border: 1px solid var(--border-color);
   position: sticky;
   top: var(--spacing-md);
+  height: fit-content;
+  max-height: none;
+  overflow: visible;
 }
 
-.year-navigation::-webkit-scrollbar {
-  width: 6px;
+/* One giant publications list — no inner scrollbar */
+.publications-list {
+  max-height: none;
+  overflow: visible;
+  padding-right: 0;
 }
 
-.year-navigation::-webkit-scrollbar-track {
-  background: var(--bg-accent);
-  border-radius: 3px;
+/* Gives scrollToYear a little breathing room */
+.publication-card {
+  scroll-margin-top: var(--spacing-lg);
 }
 
-.year-navigation::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 3px;
-}
+
 
 .year-button {
   display: block;
@@ -276,41 +275,7 @@ p {
   border-color: var(--primary-color);
 }
 
-/* Publications list */
-.publications-list {
-  overflow-y: auto;
-  max-height: 600px;
-  padding-right: var(--spacing-sm);
-}
 
-.publications-list::-webkit-scrollbar {
-  width: 8px;
-}
-
-.publications-list::-webkit-scrollbar-track {
-  background: var(--bg-accent);
-  border-radius: 4px;
-}
-
-.publications-list::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 4px;
-}
-
-.publications-list::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
-}
-
-/* Publication cards */
-.publication-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  padding: var(--spacing-sm);
-  margin-bottom: var(--spacing-sm);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.2s ease;
-}
 
 .publication-card:hover {
   box-shadow: var(--shadow-md);
