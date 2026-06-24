@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushrita Rakshit | CV</title>
+  <style>
+    :root {
+      --text: #171717;
+      --body: #333333;
+      --muted: #686868;
+      --soft: #999999;
+      --line: #e8e8e8;
+      --accent: #2457a6;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--body);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 42px 42px 80px;
+    }
+
+    .hero {
+      max-width: 900px;
+      padding-bottom: 34px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(42px, 6vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      margin: 7px 0 13px;
+      color: #555555;
+      font-size: clamp(21px, 2.8vw, 28px);
+      font-style: italic;
+      line-height: 1.25;
+    }
+
+    .intro {
+      max-width: 840px;
+      margin: 0 0 18px;
+      font-size: 19px;
+      color: #303030;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
+      gap: 7px 70px;
+      max-width: 740px;
+      margin-top: 28px;
+      font-size: 16px;
+      color: #414141;
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      align-items: center;
+      gap: 8px;
+      min-height: 24px;
+    }
+
+    .icon {
+      color: #636a70;
+      font-size: 15px;
+      width: 22px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    section {
+      margin-top: 64px;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      color: var(--text);
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      font-weight: 760;
+    }
+
+    .entry {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      column-gap: 28px;
+      margin: 0 0 27px;
+    }
+
+    .date {
+      padding-top: 4px;
+      color: #4f4f4f;
+      font-size: 14px;
+      line-height: 1.35;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .content h3 {
+      margin: 0;
+      color: #3e3e3e;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 760;
+    }
+
+    .content h3 .org {
+      color: #333333;
+      font-weight: 780;
+    }
+
+    .role {
+      margin: 2px 0 2px;
+      color: #444444;
+      font-size: 19px;
+      font-style: italic;
+    }
+
+    .meta {
+      color: var(--soft);
+      font-size: 16px;
+    }
+
+    .content p {
+      margin: 6px 0 0;
+    }
+
+    ul {
+      margin: 7px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin: 5px 0;
+      color: #333333;
+    }
+
+    li::before {
+      content: "–";
+      color: var(--soft);
+      margin-right: 9px;
+    }
+
+    .compact li {
+      margin: 4px 0;
+    }
+
+    .pubs {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      column-gap: 28px;
+      row-gap: 14px;
+    }
+
+    .pub-tag {
+      color: #4f4f4f;
+      font-size: 14px;
+      text-align: right;
+      padding-top: 2px;
+      white-space: nowrap;
+    }
+
+    .pub {
+      color: #333333;
+    }
+
+    .pub strong {
+      color: #2f2f2f;
+    }
+
+    .pub em {
+      color: #404040;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 10px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 11px;
+      color: #3f3f3f;
+      background: #fafafa;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      column-gap: 28px;
+      margin: 0 0 16px;
+    }
+
+    .skill-label {
+      color: #4f4f4f;
+      font-size: 14px;
+      text-align: right;
+      padding-top: 5px;
+      white-space: nowrap;
+    }
+
+    .note {
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 16px;
+      }
+
+      .wrap {
+        padding: 32px 24px 56px;
+      }
+
+      .hero {
+        padding-bottom: 28px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 7px;
+      }
+
+      section {
+        margin-top: 46px;
+      }
+
+      .entry,
+      .pubs,
+      .skill-row {
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+      }
+
+      .date,
+      .pub-tag,
+      .skill-label {
+        text-align: left;
+        padding-top: 0;
+      }
+
+      .entry {
+        margin-bottom: 25px;
+      }
+    }
+
+    @media print {
+      body {
+        font-size: 12px;
+      }
+
+      .wrap {
+        max-width: none;
+        padding: 24px 30px;
+      }
+
+      .hero {
+        padding-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .intro {
+        font-size: 13px;
+      }
+
+      .contact-grid {
+        margin-top: 15px;
+        font-size: 12px;
+      }
+
+      section {
+        margin-top: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+
+      .entry,
+      .pubs,
+      .skill-row {
+        grid-template-columns: 105px 1fr;
+        column-gap: 18px;
+      }
+
+      .entry {
+        margin-bottom: 13px;
+      }
+
+      .date,
+      .pub-tag,
+      .skill-label,
+      .meta,
+      .pill {
+        font-size: 10px;
+      }
+
+      .content h3 {
+        font-size: 14px;
+      }
+
+      .role {
+        font-size: 13px;
+      }
+
+      .pill-list {
+        gap: 5px;
+      }
+
+      .pill {
+        padding: 2px 7px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Sushrita Rakshit</h1>
+      <p class="intro">
+        I work at the intersection of NLP and computational social science, with focus on human-model alignment, dialogue systems, and AI for social measurement.
+      </p>
+      <p class="intro">
+        I have worked in industry and academia, which includes researchers and teams at the University of Michigan, USC's Affective Computing Group, NYU's Bi-Align Lab, and my one year tenure at Verizon Data Services.
+      </p>
+
+      <div class="contact-grid" aria-label="Contact information">
+        <div class="contact-item"><span class="icon">✉</span><a href="mailto:srakshi2@jh.edu">srakshi2@jh.edu</a></div>
+        <div class="contact-item"><span class="icon">☎</span><a href="tel:15862247597">586-224-7597</a></div>
+        <div class="contact-item"><span class="icon">🌐</span><a href="https://www.linkedin.com/in/sushritar/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+        <div class="contact-item"><span class="icon">📚</span><a href="https://scholar.google.com/citations?user=HgXQZJMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></div>
+      </div>
+    </header>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <article class="entry">
+        <div class="date">Incoming</div>
+        <div class="content">
+          <h3>Ph.D. in Computer Science</h3>
+          <div class="role">Johns Hopkins University, Baltimore, MD</div>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="date">Aug 2021 – May 2025</div>
+        <div class="content">
+          <h3>B.S.E. in Computer Science, Minor in Statistics</h3>
+          <div class="role">University of Michigan, Ann Arbor, MI</div>
+          <div class="meta">GPA: 3.6 / 4.00</div>
+          <p><span class="note">Coursework:</span> Machine Learning, Reinforcement Learning, Computer Vision, Web Systems, Databases, UX Design, Accessibility-Driven Design, Probability, Regression, Statistical Computing, Computational Social Science, and Computational Linguistics.</p>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="research">
+      <h2 id="research">Research Experience</h2>
+
+      <article class="entry">
+        <div class="date">Oct 2025 – Present</div>
+        <div class="content">
+          <h3><span class="org">Bi-Align Lab</span>, Remote / Shanghai, China</h3>
+          <div class="role">Research Assistant · Advised by Hua Shen</div>
+          <ul class="compact">
+            <span style="color: #777;">Paper(s):</span> <a href="https://arxiv.org/abs/2605.09893" target="_blank" rel="noopener noreferrer">Pseudo-Deliberation in Language Models: When Reasoning Fails to Align Values and Actions</a>, <a href="https://arxiv.org/abs/2406.09264" target="_blank" rel="noopener noreferrer">Position: Towards Bidirectional Human-AI Alignment</a> 
+          </ul>
+          <ul class="compact">
+            <p>Investigated whether the values language models articulate in reasoning actually carry over into the dialogue they generate.</p>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="date">Aug 2023 – Jun 2025</div>
+        <div class="content">
+          <h3><span class="org">BlablabLAB</span>, University of Michigan</h3>
+          <div class="role">Undergraduate Research Assistant · Advised by David Jurgens</div>
+          <ul class="compact">
+            <span style="color: #777;">Paper(s):</span> <a href="https://aclanthology.org/2025.naacl-long.594/" target="_blank" rel="noopener noreferrer">Causally Modeling the Linguistic and Social Factors that Predict Email Response</a>, <a href="https://arxiv.org/abs/2409.08330" target="_blank" rel="noopener noreferrer">Real or Robotic? Assessing Whether LLMs Accurately Simulate Qualities of Human Responses in Dialogue</a>          </ul>
+          </ul>
+            <ul class="compact">
+            Investigated how humans and large language models reason, communicate, and respond across socially grounded language tasks. Focused on human communication patterns and how language models can represent or simulate those patterns.
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="date">May 2024 – Aug 2024</div>
+        <div class="content">
+          <h3><span class="org">USC Affective Computing Group</span>, Los Angeles, CA</h3>
+          <div class="role">Visiting Researcher · Advised by Jonathan Gratch</div>
+          <ul class="compact">
+            <span style="color: #777;">Paper(s):</span> <a href="https://arxiv.org/abs/2509.04465" target="_blank" rel="noopener noreferrer">Emotionally-Aware Agents for Dispute Resolution</a>, <a href="https://aclanthology.org/2025.naacl-long.637/" target="_blank" rel="noopener noreferrer">KODIS: A Multicultural Dispute Resolution Dialogue Corpus</a>          </ul>
+          <ul class="compact">
+            Investigated how humans express emotion in cross-cultural dispute resolution dialogues and how large language models can recognize, model, and respond to those emotional signals.
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="date">Apr 2023 – Aug 2023</div>
+        <div class="content">
+          <h3><span class="org">Advanced Propulsion Concepts Lab</span>, Ann Arbor, MI</h3>
+          <div class="role">NLP Summer Researcher</div>
+          <ul class="compact">
+            Investigating how course discussion data can be used to build retrieval-based language model tools that help students find relevant answers from prior Piazza interactions.
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="professional">
+      <h2 id="professional">Professional Experience</h2>
+      <article class="entry">
+        <div class="date">Jun 2025 – Jun 2026</div>
+        <div class="content">
+          <h3><span class="org">Verizon</span>, Tampa, FL</h3>
+          <div class="role">Software Engineer · Applied AI/ML</div>
+          <ul class="compact">
+            <li>Built a technician-facing multi-agent assistant with RAG, dynamic API calls, and tool use to support real-time field troubleshooting.</li>
+            <li>Engineered a CNN-based wake-word detection system trained on thousands of audio examples to launch and control an internal application through voice activation.</li>
+            <li>Served as primary system architect for a troubleshooting wizard, designing the Neo4j graph and streaming structure used to model complex customer support workflows.</li>
+            <li>Developed AI-assisted SQL generation for large-scale workforce planning, dynamically querying and hydrating tables to track technician schedules, workloads, and assignments.</li>
+            </ul>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="publications">
+      <h2 id="publications">Selected Publications</h2>
+      <div class="pubs">
+        <div class="pub-tag">[C.1]</div>
+        <div class="pub"><strong>Sushrita Rakshit</strong>, James Anthony Hale, Kushal Chawla, Jeanne Brett, Jonathan Gratch. <em>Emotionally-Aware Agents for Dispute Resolution.</em> ACII Main, oral presentation.</div>
+
+        <div class="pub-tag">[C.2]</div>
+        <div class="pub">James Anthony Hale, <strong>Sushrita Rakshit</strong>, Kushal Chawla, Jeanne Brett, Jonathan Gratch. <em>KODIS: A Multicultural Dispute Resolution Dialogue Corpus.</em> NAACL 2025 Main Conference.</div>
+
+        <div class="pub-tag">[C.3]</div>
+        <div class="pub">Hua Shen, Tiffany Knearem, Reshmi Ghosh, Kenan Alkiek, et al., <strong>Sushrita Rakshit</strong>, et al. <em>Towards Bidirectional Human-AI Alignment.</em> NeurIPS Position Paper Track.</div>
+
+        <div class="pub-tag">[C.4]</div>
+        <div class="pub">Yinuo Xu, Hong Chen, <strong>Sushrita Rakshit</strong>, et al. <em>Causally Modeling the Linguistic and Social Factors that Predict Email Response.</em> NAACL 2025 Main Conference.</div>
+
+        <div class="pub-tag">[R.1]</div>
+        <div class="pub"><strong>Sushrita Rakshit</strong>, Hanwen Zhang, Hua Shen. <em><a href="https://arxiv.org/abs/2605.09893" target="_blank" rel="noopener noreferrer">Pseudo-Deliberation in Language Models: When Reasoning Fails to Align Values and Actions.</a></em> Manuscript in review.</div>
+        </div>
+    </section>
+
+    <section aria-labelledby="awards">
+      <h2 id="awards">Awards &amp; Presentations</h2>
+      <article class="entry">
+        <div class="date">2021 – 2025</div>
+        <div class="content">
+          <ul class="compact">
+            <li>Verizon Spotlight Award, 2025.</li>
+            <li>Computing Research Association Outstanding Undergraduate Research Award, Honorable Mention, 2025.</li>
+            <li>NSF Research Experiences for Undergraduates, $8,650, 2024.</li>
+            <li>University of Michigan Regional Merit Scholarship, $1,500, 2021.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="date">2024 – 2025</div>
+        <div class="content">
+          <ul class="compact">
+            <li><em>Emotionally Aware Agents for Dispute Resolution</em>, ACII Oral Presentation, Canberra, Australia.</li>
+            <li><em>Emotional Modeling in Disputes with Statistical Learning and Large Language Models</em>, SoCal Summer Research Symposium 2024.</li>
+            <li><em>Interpreting Spatial Reasoning Capabilities of Large Language Models</em>, Midwestern Speech and Language Days 2024.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="teaching">
+      <h2 id="teaching">Teaching</h2>
+      <article class="entry">
+        <div class="date">Aug 2024 – Present</div>
+        <div class="content">
+          <h3>University of Michigan School of Information</h3>
+          <div class="role">Instructional Aide</div>
+          <ul class="compact">
+            <li>SI 301: Models of Social Information Processing — supported 130+ students through office hours, discussion sections, grading, and rubrics.</li>
+            <li>SI 339: Web Design, Development, and Accessibility — co-taught discussions, led office hours, and supported coding exercises.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <div class="skill-row">
+        <div class="skill-label">Languages</div>
+        <div class="pill-list">
+          <span class="pill">Python</span><span class="pill">C / C++</span><span class="pill">R</span><span class="pill">SQL</span><span class="pill">MATLAB</span><span class="pill">HTML/CSS</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span><span class="pill">LaTeX</span><span class="pill">STATA</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label">ML / Data</div>
+        <div class="pill-list">
+          <span class="pill">NumPy</span><span class="pill">Pandas</span><span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">Scikit-learn</span><span class="pill">HuggingFace</span><span class="pill">node2vec</span><span class="pill">Matplotlib</span><span class="pill">SPSS</span>
+        </div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label">Tools</div>
+        <div class="pill-list">
+          <span class="pill">GitHub</span><span class="pill">Docker</span><span class="pill">Selenium</span><span class="pill">Redis</span><span class="pill">Kafka</span><span class="pill">Oracle</span><span class="pill">Faiss</span><span class="pill">ChromaDB</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="service">
+      <h2 id="service">Service</h2>
+      <article class="entry">
+        <div class="date">2021 – 2025</div>
+        <div class="content">
+          <ul class="compact">
+            <li>Saptak Academy — coordinated free music workshops and supported student practice.</li>
+            <li>826 Michigan — tutored students ages 8–14 and supported nonprofit shop operations.</li>
+            <li>Reviewed for the Bi-directional Human-AI Alignment Workshop at ICLR 2025.</li>
+            <li>Reviewed for the Bi-directional Human-AI Alignment Workshop at CHI 2025.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
