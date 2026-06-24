@@ -221,18 +221,6 @@ p {
   min-height: auto;
 }
 
-/* Keep year jump nav, but no scrollbar */
-.year-navigation {
-  background: var(--bg-accent);
-  border-radius: var(--radius);
-  padding: var(--spacing-sm);
-  border: 1px solid var(--border-color);
-  position: sticky;
-  top: var(--spacing-md);
-  height: fit-content;
-  max-height: none;
-  overflow: visible;
-}
 
 /* One giant publications list — no inner scrollbar */
 .publications-list {
@@ -608,4 +596,27 @@ a:hover {
 
 .contact-info a:hover {
   opacity: 0.7;
+}
+
+
+.publications-container {
+  display: block;
+}
+
+.year-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.year-button {
+  width: auto;
+  min-width: unset;
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
 }
