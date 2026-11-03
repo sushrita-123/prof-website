@@ -212,6 +212,50 @@ p {
   display: block;
 }
 
+.awards-list {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.award-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.award-card h3 {
+  flex: 1 1 220px;
+  min-width: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.award-image {
+  display: block;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+}
+
+.award-image-verizon {
+  width: 80px;
+  margin-right: 40px;
+}
+
+.award-distinction {
+  display: block;
+  margin-top: var(--spacing-xs);
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
 /* Publications tab layout */
 .publications-container {
   display: grid;
